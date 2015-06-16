@@ -27,11 +27,11 @@
                 <h:inputSecret value="#{loginBean.senha}" required="true"/>
             </h:panelGroup>
             <h:panelGroup styleClass="form-block" layout="block">
-                <h:selectBooleanCheckbox id="opadmin" value="#{loginBean.admin}"/>
+                <h:selectBooleanCheckbox id="opadmin"/>
                 <h:outputText value="Administrador"/>
             </h:panelGroup>
             <h:commandButton value="Entrar" action="#{loginBean.pressBotao}"/>
-            <h:messages/>
+            <h:messages id="messages"/>
         </h:form>
     </ui:define>
 
