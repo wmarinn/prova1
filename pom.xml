@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>utfpr.ct.dainf.if6ae.avaliacao</groupId>
-    <artifactId>avaliacao1-2014-2</artifactId>
+    <artifactId>avaliacao1-2015-1</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Web :: Avaliação 2 :: 2015-1</name>
+    <name>Web :: Avaliação 1 :: 2015-1</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
