@@ -16,21 +16,21 @@
     </ui:define>
 
     <ui:define name="content">
-        <h:form>
+        <h:form id="form">
             <div class="titulo-form">LOGIN</div>
             <h:panelGroup styleClass="form-block" layout="block">
-                <h:outputLabel value="Usuário" style="display: inline-block; width: 50px"/>
-                <h:inputText/>
+                <h:outputLabel id="usuario" value="Login" style="display: inline-block; width: 50px" />
+                <h:inputText value="#{loginBean.login}" required="true"/>
             </h:panelGroup>
             <h:panelGroup styleClass="form-block" layout="block">
-                <h:outputLabel value="Senha" style="display: inline-block; width: 50px"/>
-                <h:inputSecret/>
+                <h:outputLabel id="senha" value="Senha" style="display: inline-block; width: 50px"/>
+                <h:inputSecret value="#{loginBean.senha}" required="true"/>
             </h:panelGroup>
             <h:panelGroup styleClass="form-block" layout="block">
-                <h:selectBooleanCheckbox/>
+                <h:selectBooleanCheckbox id="opadmin" value="#{loginBean.admin}"/>
                 <h:outputText value="Administrador"/>
             </h:panelGroup>
-            <h:commandButton value="Entrar"/>
+            <h:commandButton value="Entrar" action="#{loginBean.pressBotao}"/>
             <h:messages/>
         </h:form>
     </ui:define>
