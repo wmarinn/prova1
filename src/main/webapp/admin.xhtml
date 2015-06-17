@@ -18,6 +18,24 @@
     <ui:define name="content">
         <h:form>
             <div class="titulo-form">ADMINISTRADOR</div>
+            <h:dataTable id="userList"
+             summary="Lista de usuarios"
+             value="#{loginBean.userList}"
+             border="1"
+             var="userList">
+            <h:column>
+        <f:facet name="header">
+            <h:outputText value="Nome" />
+        </f:facet>
+                <h:outputText value="#{userList.nome}"/>
+    </h:column>
+    <h:column>
+        <f:facet name="header">
+            <h:outputText value="Data" />
+        </f:facet>
+        <h:outputText value="#{userList.datahora}"/>
+    </h:column>
+                </h:dataTable>
         </h:form>
     </ui:define>
 
