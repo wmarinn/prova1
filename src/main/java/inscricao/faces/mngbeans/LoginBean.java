@@ -70,7 +70,7 @@ public class LoginBean extends PageBean{
     
     public void pressBotao() throws IOException{
         if(!this.login.equals(this.senha)){
-           FacesContext.getCurrentInstance().addMessage("messages", new FacesMessage("nome inesistente!"));
+           FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Acesso Negado"));
         }
         else{
             ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
